@@ -1,0 +1,24 @@
+﻿<Window x:Class="proyectofinal.Cuentas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cuentas" Height="300" Width="482">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="168*"/>
+            <RowDefinition Height="101*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="elmc" Content="Eliminar" HorizontalAlignment="Left" Margin="309,46,0,0" VerticalAlignment="Top" Width="75" Click="elmc_Click"/>
+        <Button x:Name="envc" Content="Enviar" HorizontalAlignment="Left" Margin="86,39,0,0" VerticalAlignment="Top" Width="75" Click="envc_Click" Grid.Row="1"/>
+        <Button x:Name="conc" Content="Consultar" HorizontalAlignment="Left" Margin="309,145,0,0" VerticalAlignment="Top" Width="75" Click="conc_Click"/>
+        <Button x:Name="modc" Content="Modificar" HorizontalAlignment="Left" Margin="309,100,0,0" VerticalAlignment="Top" Width="75" Click="modc_Click"/>
+        <Label x:Name="titc" Content="Datos de Cuenta" HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="ID Cuenta" HorizontalAlignment="Left" Margin="20,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.591,0.923"/>
+        <Label x:Name="ct" Content="Contrasena" HorizontalAlignment="Left" Margin="20,131,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="us" Content="Usuario" HorizontalAlignment="Left" Margin="20,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="idc" HorizontalAlignment="Left" Height="23" Margin="105,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="usuarios" HorizontalAlignment="Left" Height="23" Margin="105,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="contra" HorizontalAlignment="Left" Height="23" Margin="105,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="dbcon" HorizontalAlignment="Left" Margin="223,18,0,0" VerticalAlignment="Top" Width="241" Height="73" Grid.Row="1"/>
+
+    </Grid>
+</Window>
