@@ -75,6 +75,10 @@
     <Compile Include="Migrations\201511201549406_equis.Designer.cs">
       <DependentUpon>201511201549406_equis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511251657346_combobox.cs" />
+    <Compile Include="Migrations\201511251657346_combobox.Designer.cs">
+      <DependentUpon>201511251657346_combobox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Servicios.xaml.cs">
       <DependentUpon>Servicios.xaml</DependentUpon>
     </Compile>
@@ -157,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511201549406_equis.resx">
       <DependentUpon>201511201549406_equis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511251657346_combobox.resx">
+      <DependentUpon>201511251657346_combobox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
