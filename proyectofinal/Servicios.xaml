@@ -1,7 +1,7 @@
 ﻿<Window x:Class="proyectofinal.Servicios"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Servicios" Height="394.03" Width="631.343">
+        Title="Servicios" Height="394.03" Width="631.343" Loaded="Window_Loaded_1">
     <Grid>
         <Label x:Name="tits" Content="Datos del Servicio" HorizontalAlignment="Left" Margin="132,42,0,0" VerticalAlignment="Top" Width="103" Height="30"/>
         <Label x:Name="Preciooos" Content="Precio" HorizontalAlignment="Left" Margin="48,175,0,0" VerticalAlignment="Top" Width="81"/>
@@ -15,6 +15,8 @@
         <DataGrid x:Name="dbser" HorizontalAlignment="Left" Margin="340,245,0,0" VerticalAlignment="Top" Height="88" Width="260"/>
         <Label x:Name="idser" Content="ID Servicio" HorizontalAlignment="Left" Margin="48,97,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="idse" HorizontalAlignment="Left" Height="23" Margin="134,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="ID Proveedor" HorizontalAlignment="Left" Margin="48,206,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="proveID" HorizontalAlignment="Left" Margin="134,210,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

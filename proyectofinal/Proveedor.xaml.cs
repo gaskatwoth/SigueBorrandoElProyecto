@@ -39,6 +39,9 @@ namespace proyectofinal
 
             db.Proveedores.Add(prov);
             db.SaveChanges();
+            //var registros = from s in db.Proveedores
+            //                select s;
+            //dbgrid.ItemsSource = registros.ToList();
         }
              else {MessageBox.Show("Solo letras y numero");}
             txtnom.Clear();
@@ -50,7 +53,7 @@ namespace proyectofinal
         }
 
         private void borrarP_Click(object sender, RoutedEventArgs e)
-        {
+        {//Borrar
             if (Regex.IsMatch(Actualizar.Text, @"^\d+$"))
             {
 
@@ -61,15 +64,17 @@ namespace proyectofinal
                 if (prov != null)
                 {
                     db.Proveedores.Remove(prov);
+                    Actualizar.Clear();
                     db.SaveChanges();
 
                 }
             }
             else { MessageBox.Show("Solo Numeros en #id "); }
+            MessageBox.Show("Se borraron los datos");
         }
 
         private void ModP_Click(object sender, RoutedEventArgs e)
-        {
+        {//actualizar
             if (Regex.IsMatch(txtnom.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(txtdir.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(gg.Text, @"^[a-zA-Z]+$"))
             {
                 index db = new index();
@@ -80,13 +85,16 @@ namespace proyectofinal
                 {
                     prov.NombreProveedor = txtnom.Text;
                     prov.Direccion = txtdir.Text;
-                    //prov.Giro = txtgiro.Text;
+                    prov.Giro = gg.Text;
                     db.SaveChanges();
 
                 }
             }
             else { MessageBox.Show("Solo letras y numeros"); }
-            
+            txtnom.Clear();
+            txtdir.Clear();
+            Actualizar.Clear();
+            MessageBox.Show("Modificacion con exito");
         }
 
         private void conp_Click(object sender, RoutedEventArgs e)
@@ -114,11 +122,18 @@ namespace proyectofinal
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
-           
+
         }
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
+            //index db = new index();
+            //var registros = from s in db.Proveedores
+            //                select s;
+
+            //gg.ItemsSource = registros.ToList();
+            //gg.DisplayMemberPath = "Giro";
+            //gg.SelectedValuePath = "Giro";
 
         }
     }

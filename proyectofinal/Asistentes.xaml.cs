@@ -32,7 +32,7 @@ namespace proyectofinal
         private void enviarasis_Click(object sender, RoutedEventArgs e)
         {
 
-            if (Regex.IsMatch(noma.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(apela.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(tela.Text, @"^\d+$"))
+            if (Regex.IsMatch(noma.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(apela.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(tela.Text, @"^\d+$"))
             {
             index db = new index();
             Asistente Asi = new Asistente();
@@ -45,7 +45,11 @@ namespace proyectofinal
             db.SaveChanges();
         }
              else {MessageBox.Show("Solo letras y numero");}
+            noma.Clear();
+            apela.Clear();
+            tela.Clear();
 
+            MessageBox.Show("Se Guardaron los datos");
         
         }
 
@@ -63,10 +67,12 @@ namespace proyectofinal
                 {
                     db.Asistentes.Remove(Asi);
                     db.SaveChanges();
+                    idasis.Clear();
 
                 }
             }
             else { MessageBox.Show("Solo Numeros en #id "); }
+            MessageBox.Show("Se borraron los datos");
         }
 
         private void modi_Click(object sender, RoutedEventArgs e)
@@ -83,30 +89,36 @@ namespace proyectofinal
                     Asi.Apellido = apela.Text;
                     Asi.Telefono = tela.Text;
                     db.SaveChanges();
+                    noma.Clear();
+                    apela.Clear();
+                    tela.Clear();
 
                 }
             }
             else { MessageBox.Show("Solo letras y numeros"); }
+            MessageBox.Show("Modificacion con exito");
         }
 
         private void cons_Click(object sender, RoutedEventArgs e)
-        {
-            if (Regex.IsMatch(idasis.Text, @"^\d+$"))
-            {
+        {//consultar
+
+            //if (Regex.IsMatch(idasis.Text, @"^\d+$"))
+            //{
                 index db = new index();
-                int id = int.Parse(idasis.Text);
+                //int id = int.Parse(idasis.Text);
                 var registros = from s in db.Asistentes
-                                where s.IdAsistente == id
-                                select new
-                                {
-                                    s.IdAsistente,
-                                    s.Nombre,
-                                    s.Apellido,
-                                    s.Telefono
-                                };
+                                select s;
+                                //where s.IdAsistente == id
+                                //select new
+                                //{
+                                //    s.IdAsistente,
+                                //    s.Nombre,
+                                //    s.Apellido,
+                                //    s.Telefono
+                                //};
                 dbasi.ItemsSource = registros.ToList();
-            }
-            else { MessageBox.Show("Solo numeros"); }
+            //}
+            //else { MessageBox.Show("Solo numeros"); }
         }
     }
 }
