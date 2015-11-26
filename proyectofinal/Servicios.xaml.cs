@@ -29,7 +29,7 @@ namespace proyectofinal
         private void envs_Click(object sender, RoutedEventArgs e)
         {
             //enviar
-            if (Regex.IsMatch(nomser.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(precio.Text, @"^\d+$"))
+            if (Regex.IsMatch(nomser.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(precio.Text, @"^\d+$"))
             {
                 index db = new index();
                 Servicio ser = new Servicio();
@@ -76,7 +76,7 @@ namespace proyectofinal
 
         private void Mods_Click(object sender, RoutedEventArgs e)
         {//modificar
-            if (Regex.IsMatch(nomser.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(precio.Text, @"^\d+$"))
+            if (Regex.IsMatch(nomser.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(precio.Text, @"^\d+$"))
             {
 
                 index db = new index();

@@ -77,7 +77,7 @@ namespace proyectofinal
 
         private void modi_Click(object sender, RoutedEventArgs e)
         {//Modificar
-            if (Regex.IsMatch(noma.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(apela.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(tela.Text, @"^\d+$"))
+            if (Regex.IsMatch(noma.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(apela.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(tela.Text, @"^\d+$"))
             {
                 index db = new index();
                 int id = int.Parse(idasis.Text);

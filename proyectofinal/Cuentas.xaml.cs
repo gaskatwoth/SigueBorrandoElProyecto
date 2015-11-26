@@ -43,12 +43,13 @@ namespace proyectofinal
                 }
             }
             else { MessageBox.Show("Solo Numeros en #id "); }
+            MessageBox.Show("Se borro con exito");
         }
 
         private void envc_Click(object sender, RoutedEventArgs e)
         {
             //enviar
-            if (Regex.IsMatch(usuarios.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(contra.Text, @"^[a-zA-Z]+$") )
+            if (Regex.IsMatch(usuarios.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(contra.Text, @"^[a-zA-Z\s]+$") )
             {
                 index db = new index();
                 CuentaProveedor Cuenta = new CuentaProveedor();
@@ -57,15 +58,18 @@ namespace proyectofinal
 
 
                 db.CuentaProverdores.Add(Cuenta);
+                usuarios.Clear();
+                contra.Clear();
                 db.SaveChanges();
             }
             else { MessageBox.Show("Solo letras y numero"); }
+            MessageBox.Show("Se guardaron datos");
         }
 
         private void modc_Click(object sender, RoutedEventArgs e)
         {
             //modificar
-            if (Regex.IsMatch(usuarios.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(contra.Text, @"^[a-zA-Z]+$") )
+            if (Regex.IsMatch(usuarios.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(contra.Text, @"^[a-zA-Z\s]+$") )
             {
                 index db = new index();
                 int id = int.Parse(idc.Text);
