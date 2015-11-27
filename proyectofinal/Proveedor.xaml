@@ -12,13 +12,18 @@
         <Button x:Name="enviarbd" Content="Enviar" HorizontalAlignment="Left" Margin="265,91,0,0" VerticalAlignment="Top" Width="75" Click="enviarbd_Click"/>
         <Label x:Name="idP" Content="ID" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Actualizar" HorizontalAlignment="Left" Height="23" Margin="99,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="borrarP" Content="Borrar" HorizontalAlignment="Left" Margin="514,51,0,0" VerticalAlignment="Top" Width="75" Click="borrarP_Click"/>
-        <Button x:Name="ModP" Content="Modificar" HorizontalAlignment="Left" Margin="514,91,0,0" VerticalAlignment="Top" Width="75" Click="ModP_Click"/>
-        <Button x:Name="conp" Content="Consultar" HorizontalAlignment="Left" Margin="514,144,0,0" VerticalAlignment="Top" Width="75" Click="conp_Click"/>
+        <Button x:Name="borrarP" Content="Borrar" HorizontalAlignment="Left" Margin="455,122,0,0" VerticalAlignment="Top" Width="75" Click="borrarP_Click"/>
+        <Button x:Name="ModP" Content="Modificar" HorizontalAlignment="Left" Margin="589,119,0,0" VerticalAlignment="Top" Width="75" Click="ModP_Click"/>
+        <Button x:Name="conp" Content="Consultar" HorizontalAlignment="Left" Margin="514,82,0,0" VerticalAlignment="Top" Width="75" Click="conp_Click"/>
         <DataGrid x:Name="dbgrid" HorizontalAlignment="Left" Margin="345,197,0,0" VerticalAlignment="Top" Height="131" Width="350"/>
         <Label Content="Ingresa ID para eliminar/modificar" HorizontalAlignment="Left" Margin="455,10,0,0" VerticalAlignment="Top" Width="254"/>
         <ComboBox x:Name="gg" HorizontalAlignment="Left" Margin="99,167,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
             <ListBoxItem Content="Cerrajero"/>
+            <ListBoxItem Content="Electrico"/>
+            <ListBoxItem Content="Llantera"/>
+            <ListBoxItem Content="Mecanico"/>
+            <ListBoxItem Content="Grua"/>
+            <ListBoxItem/>
         </ComboBox>
 
     </Grid>

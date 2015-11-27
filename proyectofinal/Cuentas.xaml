@@ -19,6 +19,7 @@
         <TextBox x:Name="usuarios" HorizontalAlignment="Left" Height="23" Margin="105,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="contra" HorizontalAlignment="Left" Height="23" Margin="105,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <DataGrid x:Name="dbcon" HorizontalAlignment="Left" Margin="223,18,0,0" VerticalAlignment="Top" Width="241" Height="73" Grid.Row="1"/>
+        <Label Content="Ingresa ID para eliminar/modificar" HorizontalAlignment="Left" Margin="257,10,-37,0" VerticalAlignment="Top" Width="254"/>
 
     </Grid>
 </Window>

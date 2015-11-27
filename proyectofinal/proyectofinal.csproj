@@ -66,6 +66,9 @@
     <Compile Include="Cuentas.xaml.cs">
       <DependentUpon>Cuentas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Facturas.xaml.cs">
+      <DependentUpon>Facturas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="mibd\Asistente.cs" />
     <Compile Include="mibd\CuentaProveedor.cs" />
     <Compile Include="mibd\Factura.cs" />
@@ -91,6 +94,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Cuentas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Facturas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

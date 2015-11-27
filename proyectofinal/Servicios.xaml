@@ -3,20 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Servicios" Height="394.03" Width="631.343" Loaded="Window_Loaded_1">
     <Grid>
-        <Label x:Name="tits" Content="Datos del Servicio" HorizontalAlignment="Left" Margin="132,42,0,0" VerticalAlignment="Top" Width="103" Height="30"/>
+        <Label x:Name="tits" Content="Datos del Servicio" HorizontalAlignment="Left" Margin="132,42,0,0" VerticalAlignment="Top" Width="122" Height="30"/>
         <Label x:Name="Preciooos" Content="Precio" HorizontalAlignment="Left" Margin="48,175,0,0" VerticalAlignment="Top" Width="81"/>
         <Label x:Name="noms" Content="Servicio" HorizontalAlignment="Left" Margin="48,131,0,0" VerticalAlignment="Top" Width="81"/>
         <TextBox x:Name="nomser" HorizontalAlignment="Left" Height="23" Margin="134,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="precio" HorizontalAlignment="Left" Height="23" Margin="134,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="envs" Content="Enviar" HorizontalAlignment="Left" Margin="134,273,0,0" VerticalAlignment="Top" Width="101" Click="envs_Click"/>
-        <Button x:Name="bors" Content="Borrar" HorizontalAlignment="Left" Margin="444,97,0,0" VerticalAlignment="Top" Width="75" Click="bors_Click"/>
-        <Button x:Name="Mods" Content="Modificar" HorizontalAlignment="Left" Margin="444,137,0,0" VerticalAlignment="Top" Width="75" Click="Mods_Click"/>
-        <Button x:Name="cons" Content="Consulta" HorizontalAlignment="Left" Margin="444,181,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.455,3.128" Click="cons_Click"/>
+        <Button x:Name="bors" Content="Borrar" HorizontalAlignment="Left" Margin="378,161,0,0" VerticalAlignment="Top" Width="75" Click="bors_Click"/>
+        <Button x:Name="Mods" Content="Modificar" HorizontalAlignment="Left" Margin="509,161,0,0" VerticalAlignment="Top" Width="75" Click="Mods_Click"/>
+        <Button x:Name="cons" Content="Consulta" HorizontalAlignment="Left" Margin="445,119,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.455,3.128" Click="cons_Click"/>
         <DataGrid x:Name="dbser" HorizontalAlignment="Left" Margin="340,245,0,0" VerticalAlignment="Top" Height="88" Width="260"/>
         <Label x:Name="idser" Content="ID Servicio" HorizontalAlignment="Left" Margin="48,97,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="idse" HorizontalAlignment="Left" Height="23" Margin="134,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="ID Proveedor" HorizontalAlignment="Left" Margin="48,206,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="proveID" HorizontalAlignment="Left" Margin="134,210,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ingresa ID para eliminar/modificar" HorizontalAlignment="Left" Margin="378,42,-9,0" VerticalAlignment="Top" Width="254"/>
 
     </Grid>
 </Window>

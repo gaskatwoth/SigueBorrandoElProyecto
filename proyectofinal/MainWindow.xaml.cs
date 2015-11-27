@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using proyectofinal.mibd;
 namespace proyectofinal
 {
     /// <summary>
@@ -20,6 +20,8 @@ namespace proyectofinal
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Proveedor temProv = null;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -34,12 +36,23 @@ namespace proyectofinal
 
         private void envioser_Click(object sender, RoutedEventArgs e)
         {
-            Servicios vta = new Servicios();
-            vta.Show();
+            index db = new index();
+            if (db.Proveedores.Count() > 0)
+            {
+
+
+                Servicios vta = new Servicios();
+                vta.Show();
+            }
+            else
+            {
+                MessageBox.Show("No hay proveedores");
+            }
         }
 
         private void enviarasi_Click(object sender, RoutedEventArgs e)
         {
+            
             Asistentes vta = new Asistentes();
             vta.Show();
         }
@@ -47,6 +60,12 @@ namespace proyectofinal
         private void enviocue_Click(object sender, RoutedEventArgs e)
         {
             Cuentas vta = new Cuentas();
+            vta.Show();
+        }
+
+        private void enviarfac_Click(object sender, RoutedEventArgs e)
+        {
+            Facturas vta = new Facturas();
             vta.Show();
         }
     }

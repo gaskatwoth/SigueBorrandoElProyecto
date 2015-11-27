@@ -54,6 +54,8 @@ namespace proyectofinal
 
         private void borrarP_Click(object sender, RoutedEventArgs e)
         {//Borrar
+
+            
             if (Regex.IsMatch(Actualizar.Text, @"^\d+$"))
             {
 
@@ -66,11 +68,11 @@ namespace proyectofinal
                     db.Proveedores.Remove(prov);
                     Actualizar.Clear();
                     db.SaveChanges();
-
+                    MessageBox.Show("Se borraron los datos");
                 }
             }
             else { MessageBox.Show("Solo Numeros en #id "); }
-            MessageBox.Show("Se borraron los datos");
+          
         }
 
         private void ModP_Click(object sender, RoutedEventArgs e)

@@ -5,7 +5,7 @@
     <Grid>
         <Button x:Name="enviapro" Content="Proveedor" HorizontalAlignment="Left" Margin="62,79,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.8,1.508" Click="Button_Click_1" Height="25"/>
         <Button x:Name="envioser" Content="Servicio" HorizontalAlignment="Left" Margin="308,79,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="envioser_Click"/>
-        <Button x:Name="enviarfac" Content="Factura" HorizontalAlignment="Left" Margin="193,254,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+        <Button x:Name="enviarfac" Content="Factura" HorizontalAlignment="Left" Margin="193,254,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="enviarfac_Click"/>
         <Button x:Name="enviocue" Content="Cuenta " HorizontalAlignment="Left" Height="25" Margin="308,161,0,0" VerticalAlignment="Top" Width="100" Click="enviocue_Click"/>
         <Button x:Name="enviarasi" Content="Asistente" HorizontalAlignment="Left" Height="24" Margin="62,161,0,0" VerticalAlignment="Top" Width="100" Click="enviarasi_Click"/>
         <Label x:Name="Tutulo" Content="Bievenido a HelpMe App" HorizontalAlignment="Left" Margin="179,10,0,0" VerticalAlignment="Top" Width="147"/>
