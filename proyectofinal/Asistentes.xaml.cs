@@ -43,13 +43,14 @@ namespace proyectofinal
             //db.Asistentes.Add(asi);
             db.Asistentes.Add(Asi);
             db.SaveChanges();
+
+            MessageBox.Show("Se Guardaron los datos");
         }
              else {MessageBox.Show("Solo letras y numero");}
             noma.Clear();
             apela.Clear();
             tela.Clear();
 
-            MessageBox.Show("Se Guardaron los datos");
         
         }
 
@@ -68,11 +69,11 @@ namespace proyectofinal
                     db.Asistentes.Remove(Asi);
                     db.SaveChanges();
                     idasis.Clear();
-
+                    MessageBox.Show("Se borraron los datos");
                 }
             }
             else { MessageBox.Show("Solo Numeros en #id "); }
-            MessageBox.Show("Se borraron los datos");
+            
         }
 
         private void modi_Click(object sender, RoutedEventArgs e)
@@ -92,11 +93,12 @@ namespace proyectofinal
                     noma.Clear();
                     apela.Clear();
                     tela.Clear();
+                    MessageBox.Show("Modificacion con exito");
 
                 }
             }
             else { MessageBox.Show("Solo letras y numeros"); }
-            MessageBox.Show("Modificacion con exito");
+           
         }
 
         private void cons_Click(object sender, RoutedEventArgs e)

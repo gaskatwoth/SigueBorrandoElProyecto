@@ -19,11 +19,12 @@
         <Label Content="Ingresa ID para eliminar/modificar" HorizontalAlignment="Left" Margin="455,10,0,0" VerticalAlignment="Top" Width="254"/>
         <ComboBox x:Name="gg" HorizontalAlignment="Left" Margin="99,167,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
             <ListBoxItem Content="Cerrajero"/>
+            <ListBoxItem/>
             <ListBoxItem Content="Electrico"/>
             <ListBoxItem Content="Llantera"/>
             <ListBoxItem Content="Mecanico"/>
             <ListBoxItem Content="Grua"/>
-            <ListBoxItem/>
+            <ListBoxItem Content="Puto"/>
         </ComboBox>
 
     </Grid>

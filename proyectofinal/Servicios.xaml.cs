@@ -39,7 +39,7 @@ namespace proyectofinal
 
                 db.Servicios.Add(ser);
                 db.SaveChanges();
-
+                MessageBox.Show("Se guardaron los datos con exito");
                 //var registros = from s in db.Servicios
                 //                select s;
                 //dbser.ItemsSource = registros.ToList();
@@ -50,7 +50,7 @@ namespace proyectofinal
             nomser.Clear();
             precio.Clear();
             
-            MessageBox.Show("Se guardaron los datos con exito");
+            
         }
 
         private void bors_Click(object sender, RoutedEventArgs e)
