@@ -90,6 +90,14 @@
     <Compile Include="Migrations\201512011714564_facturax.Designer.cs">
       <DependentUpon>201512011714564_facturax.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512012244494_capturas.cs" />
+    <Compile Include="Migrations\201512012244494_capturas.Designer.cs">
+      <DependentUpon>201512012244494_capturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512012247341_equisde.cs" />
+    <Compile Include="Migrations\201512012247341_equisde.Designer.cs">
+      <DependentUpon>201512012247341_equisde.cs</DependentUpon>
+    </Compile>
     <Compile Include="Servicios.xaml.cs">
       <DependentUpon>Servicios.xaml</DependentUpon>
     </Compile>
@@ -185,6 +193,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512011714564_facturax.resx">
       <DependentUpon>201512011714564_facturax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512012244494_capturas.resx">
+      <DependentUpon>201512012244494_capturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512012247341_equisde.resx">
+      <DependentUpon>201512012247341_equisde.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

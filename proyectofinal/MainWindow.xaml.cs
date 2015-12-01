@@ -20,8 +20,7 @@ namespace proyectofinal
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Proveedor temProv = null;
-
+   
         public MainWindow()
         {
             InitializeComponent();
@@ -65,8 +64,16 @@ namespace proyectofinal
 
         private void enviarfac_Click(object sender, RoutedEventArgs e)
         {
+              index db = new index();
+            if (db.Proveedores.Count() > 0)
+            {
             Facturas vta = new Facturas();
             vta.Show();
+            }
+            else
+            {
+                MessageBox.Show("No hay proveedores ni servicios");
+            }
         }
     }
 }

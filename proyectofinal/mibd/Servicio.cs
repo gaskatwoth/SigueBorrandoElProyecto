@@ -15,5 +15,9 @@ namespace proyectofinal
         public int Precio { get; set; }
 
         public virtual ICollection<Factura> Facturas { get; set; }
+
+        public virtual ICollection<Factura> FacturaList { get; set; }
+
+        
     }
 }

@@ -16,7 +16,8 @@ namespace proyectofinal.mibd
         public DbSet<Factura> Facturas { get; set; }
         public DbSet<CuentaProveedor> CuentaProverdores { get; set; }
 
-        
+        public object ItemsSource { get; set; }
+        public Proveedor Proveedor { get; set; }
 
     }
 }

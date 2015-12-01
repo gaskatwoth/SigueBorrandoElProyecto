@@ -29,7 +29,7 @@ namespace proyectofinal
         private void envs_Click(object sender, RoutedEventArgs e)
         {
             //enviar
-            if (Regex.IsMatch(nomser.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(precio.Text, @"^\d+$"))
+            if (Regex.IsMatch(nomser.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(precio.Text, @"^\d+$") && Regex.IsMatch(proveID.Text,@"^\d+$"))
             {
                 index db = new index();
                 Servicio ser = new Servicio();
@@ -68,7 +68,7 @@ namespace proyectofinal
                     db.Servicios.Remove(ser);
                     db.SaveChanges();
                     idse.Clear();
-
+                    MessageBox.Show("Se Borraron los datos");
                 }
             }
             else { MessageBox.Show("Solo Numeros en #id "); }
@@ -76,7 +76,7 @@ namespace proyectofinal
 
         private void Mods_Click(object sender, RoutedEventArgs e)
         {//modificar
-            if (Regex.IsMatch(nomser.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(precio.Text, @"^\d+$"))
+            if (Regex.IsMatch(nomser.Text, @"^[a-zA-Z\s]+$") && Regex.IsMatch(precio.Text, @"^\d+$") && Regex.IsMatch(proveID.Text,@"^\d+$"))
             {
 
                 index db = new index();
@@ -88,8 +88,9 @@ namespace proyectofinal
                     ser.NombreServicio = nomser.Text;
                     ser.Precio = int.Parse(precio.Text);
                     ser.ProveedorIdProveedor = int.Parse(proveID.SelectedValue.ToString());
-                    db.SaveChanges();
 
+                    db.SaveChanges();
+                    MessageBox.Show("Se Modificaron los datos");
                 }
             }
             else { MessageBox.Show("Solo Numeros en #id "); }

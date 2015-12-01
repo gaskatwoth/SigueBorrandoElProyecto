@@ -39,16 +39,15 @@ namespace proyectofinal
 
             db.Proveedores.Add(prov);
             db.SaveChanges();
+            MessageBox.Show("Se Guardaron los datos");
             //var registros = from s in db.Proveedores
             //                select s;
             //dbgrid.ItemsSource = registros.ToList();
         }
-             else {MessageBox.Show("Solo letras y numero");}
+             else {MessageBox.Show("Solo letras");}
             txtnom.Clear();
             txtdir.Clear();
-          
-
-            MessageBox.Show("Se Guardaron los datos");
+            
         
         }
 
@@ -89,14 +88,14 @@ namespace proyectofinal
                     prov.Direccion = txtdir.Text;
                     prov.Giro = gg.Text;
                     db.SaveChanges();
-
+                    MessageBox.Show("Modificacion con exito");
                 }
             }
             else { MessageBox.Show("Solo letras y numeros"); }
             txtnom.Clear();
             txtdir.Clear();
             Actualizar.Clear();
-            MessageBox.Show("Modificacion con exito");
+            
         }
 
         private void conp_Click(object sender, RoutedEventArgs e)

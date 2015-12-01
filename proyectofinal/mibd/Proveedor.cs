@@ -17,6 +17,6 @@ namespace proyectofinal
        
         public virtual ICollection<Factura> Facturas { get; set; }
         public virtual ICollection<Servicio> Servicios { get; set; }
-
+       
     }
 }

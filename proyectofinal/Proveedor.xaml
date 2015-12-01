@@ -3,28 +3,26 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="nuevaVentana" Height="382.09" Width="726.866" Loaded="Window_Loaded_1">
     <Grid x:Name="Proveedores" RenderTransformOrigin="0.481,0.432">
-        <Label x:Name="TutuloProv" Content="Datos Proveedor" HorizontalAlignment="Left" Margin="99,10,0,0" VerticalAlignment="Top" Width="101"/>
+        <Label x:Name="TutuloProv" Content="Datos Proveedor" HorizontalAlignment="Left" Margin="99,10,0,0" VerticalAlignment="Top" Width="101" FontWeight="Bold"/>
         <Label x:Name="nombre" Content="Nombre" HorizontalAlignment="Left" Height="29" Margin="10,82,0,0" VerticalAlignment="Top" Width="70"/>
         <TextBox x:Name="txtnom" HorizontalAlignment="Left" Height="23" Margin="99,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="direccion" Content="Direccion" HorizontalAlignment="Left" Height="29" Margin="10,116,0,0" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.482,0.834"/>
         <TextBox x:Name="txtdir" HorizontalAlignment="Left" Height="23" Margin="99,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="txtgir" Content="Giro" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="61"/>
-        <Button x:Name="enviarbd" Content="Enviar" HorizontalAlignment="Left" Margin="265,91,0,0" VerticalAlignment="Top" Width="75" Click="enviarbd_Click"/>
+        <Button x:Name="enviarbd" Content="Enviar" HorizontalAlignment="Left" Margin="125,237,0,0" VerticalAlignment="Top" Width="75" Click="enviarbd_Click"/>
         <Label x:Name="idP" Content="ID" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Actualizar" HorizontalAlignment="Left" Height="23" Margin="99,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="borrarP" Content="Borrar" HorizontalAlignment="Left" Margin="455,122,0,0" VerticalAlignment="Top" Width="75" Click="borrarP_Click"/>
         <Button x:Name="ModP" Content="Modificar" HorizontalAlignment="Left" Margin="589,119,0,0" VerticalAlignment="Top" Width="75" Click="ModP_Click"/>
         <Button x:Name="conp" Content="Consultar" HorizontalAlignment="Left" Margin="514,82,0,0" VerticalAlignment="Top" Width="75" Click="conp_Click"/>
         <DataGrid x:Name="dbgrid" HorizontalAlignment="Left" Margin="345,197,0,0" VerticalAlignment="Top" Height="131" Width="350"/>
-        <Label Content="Ingresa ID para eliminar/modificar" HorizontalAlignment="Left" Margin="455,10,0,0" VerticalAlignment="Top" Width="254"/>
+        <Label Content="Ingresa ID para eliminar/modificar" HorizontalAlignment="Left" Margin="455,10,0,0" VerticalAlignment="Top" Width="254" FontWeight="Bold"/>
         <ComboBox x:Name="gg" HorizontalAlignment="Left" Margin="99,167,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
             <ListBoxItem Content="Cerrajero"/>
-            <ListBoxItem/>
             <ListBoxItem Content="Electrico"/>
             <ListBoxItem Content="Llantera"/>
             <ListBoxItem Content="Mecanico"/>
             <ListBoxItem Content="Grua"/>
-            <ListBoxItem Content="Puto"/>
         </ComboBox>
 
     </Grid>
