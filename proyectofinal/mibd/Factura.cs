@@ -8,11 +8,13 @@ namespace proyectofinal
 {
   public  class Factura
     {
+      //this.ProveedorList = new List<Servicio>();
 
         [Key] public int IdFactura { get; set; }
         public DateTime Fecha { get; set; }
         public virtual int AsistenteIdAsistente { get; set; }
         public virtual int ServicioIdServicio { get; set; }
 
+        //public virtual List<Servicio> ProveedorList { get; set; }
     }
 }

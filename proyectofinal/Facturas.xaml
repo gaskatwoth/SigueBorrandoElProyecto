@@ -13,8 +13,9 @@
         <Label Content="Servicio" HorizontalAlignment="Left" Margin="37,128,0,0" VerticalAlignment="Top" Width="142"/>
         <ComboBox x:Name="cbprov" HorizontalAlignment="Left" Margin="189,82,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="cbser" HorizontalAlignment="Left" Margin="189,132,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
-        <Button Content="Button" Grid.Column="2" HorizontalAlignment="Left" Margin="57,128,0,0" VerticalAlignment="Top" Width="75"/>
-        <DataGrid HorizontalAlignment="Left" Height="100" Margin="57,254,0,-116" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="390"/>
+        <Button x:Name="envfac" Content="Enviar" HorizontalAlignment="Left" Margin="211,181,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="envfac_Click"/>
+        <DataGrid x:Name="gridfat" HorizontalAlignment="Left" Height="100" Margin="57,254,0,-116" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="390"/>
+        <Label x:Name="total" Content="Total:" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="6,359,0,-144" VerticalAlignment="Top" Width="126"/>
 
     </Grid>
 </Window>
